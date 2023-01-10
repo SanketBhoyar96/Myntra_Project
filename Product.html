@@ -205,6 +205,7 @@
             border: 1px solid #eaeaec;
             display: flex;
             flex-direction: column;
+           
         }
         img:hover{
             transform: scale(0.9);
@@ -223,6 +224,8 @@
             margin: auto;
             /* border: 1px solid rgb(177, 240, 15); */
             height: 330px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
         }
 
         #rightproduct>div>div>img {
@@ -241,6 +244,7 @@
             font-size: 13px;
             margin: 0;
             margin-bottom: 1px;
+            text-align: center;
         }
 
         #rightproduct>div>div>div>button{
@@ -252,12 +256,19 @@
             padding: 2px;
             border-radius: 5px;
             border: none;
+            margin-left: 20px;
 
         }
 
         #rightproduct>div>div>div>button:hover {
             background-color: rgb(212, 14, 14);
             color: rgb(236, 230, 230);
+        }
+        /* #rightproduct>#lineoneOne>button{
+            transform: scale(0.7);
+        } */
+        button:hover{
+        transform: scale(1.09);
         }
 
         /* --------------------------------leftnavbar------------------------------------ */
@@ -432,7 +443,7 @@
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
-                            <p> 872</p>
+                            <p>872</p>
                             <!-- <div>Rs.<span>872</span></div> -->
                             <button onclick="addCart(lineoneOne)">ADD TO CART</button>
                         </div>
@@ -479,160 +490,161 @@
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div id="lineTwoone">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19217384/2022/7/22/5d586145-5e6a-44d6-9292-a662173051dc1658470302498SportsShoes1.jpg"
                             alt="">
                         <div>
                             <p>Nike</p>
                             <p>Men Sneakers</p>
                             <p>872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(lineTwoone)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div id="lineTwotwo">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20576346/2022/11/1/eed5c027-09c8-4cd5-b152-5836f6101b741667313148977SportsShoes1.jpg"
                             alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(lineTwotwo)">ADD TO CART</button>
+
                         </div>
                     </div>
-                    <div>
+                    <div id="lineTwothree">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19935384/2022/11/4/10965e86-7771-4cba-9724-b7e02690fe9c1667560140690-Nike-Men-Blue-Flex-Experience-Run-11-Next-Nature-Shoes-50216-1.jpg"
                             alt="">
-                        <div>
-                            <p>Roadster</p>
-                            <p>Men Sneakers</p>
-                            <p> 872</p>
-                            <button>ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/5/27/c7011f30-7b64-44ed-a5bb-f884245791061622117936812-1.jpg"
-                            alt="">
-                        <div>
-                            <p>Roadster</p>
-                            <p>Men Sneakers</p>
-                            <p> 872</p>
-                            <button>ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div>
-
-                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16204296/2022/7/13/e64dc091-0298-4656-8161-04ffa2c9c0dd1657691999418-Roadster-Men-Grey-Woven-Design-Running-Shoes-403165769199906-1.jpg"
-                            alt="">
-                        alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p>872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(lineTwothree)">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div id="lineTwofour">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/5/27/c7011f30-7b64-44ed-a5bb-f884245791061622117936812-1.jpg"
+                            alt="">
+                        <div >
+                            <p>Roadster</p>
+                            <p>Men Sneakers</p>
+                            <p> 872</p>
+                            <button onclick="addCart(lineTwofour)">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div id="lineTwofive">
+
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16204296/2022/7/13/e64dc091-0298-4656-8161-04ffa2c9c0dd1657691999418-Roadster-Men-Grey-Woven-Design-Running-Shoes-403165769199906-1.jpg"
+                            alt="">
+                        <div >
+                            <p>Roadster</p>
+                            <p>Men Sneakers</p>
+                            <p>872</p>
+                            <button onclick="addCart(lineTwofive)">ADD TO CART</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div id="linethreeone">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/18740394/2022/9/19/af20e8a0-d0ee-496a-b1d7-a58bf188a0581663561966647-UA-Charged-Escape-3-BL-8181663561966322-1.jpg"
                             alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linethreeone)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div  id="linethreetwo">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20153028/2022/9/24/04a91674-aef0-44e8-92d0-a6554ab61c211664010042023RedTapeMenWhiteMeshWalkingNon-MarkingShoes1.jpg"
                             alt="">
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linethreetwo)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div id="linethreethree">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11097158/2021/2/17/8a4dbf96-9fa1-4ac2-9841-ef7c53e141e31613525189923HIGHLANDERMenGreySneakers1.jpg"
                             alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linethreethree)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div  id="linethreefour">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20896564/2022/12/7/d084f5e1-e21d-4c50-98d8-1e2f94a4c0aa1670386882871JackJonesMenBlackLace-UpSneakers2.jpg"
                             alt="">
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linethreefour)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div> <img
+                    <div id="linethreefive">
+                         <img
                             src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14047504/2022/12/1/f5c65582-dbef-4525-ae3e-0eb1a675a83d1669881561015HIGHLANDERMenWhiteWovenDesignSneakersCasualShoes1.jpg"
-                            alt="">
-                        <div>
+                            alt="linethreefive">
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p>872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linethreefive)">ADD TO CART</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div> <img
+                    <div id="linefourone"> <img
                             src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11097156/2019/12/10/b8d45a95-161f-442c-9e69-6997e05f25ff1575980861980-HIGHLANDER-Men-White-Sneakers-4301575980859728-1.jpg"
                             alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linefourone)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div  id="linetfourtwo">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17097806/2022/2/10/aa9f5212-f2eb-4531-b836-1df0c3d3fe2d1644484313283MastHarbourMenWhiteStripedSneakers1.jpg"
                             alt="">
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linetfourtwo)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div  id="linefourthree">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20084000/2022/9/20/809b3a06-2af4-455c-95e5-b679f88ca2c61663654304864MactreeMenWhiteColourblockedPUSneakers1.jpg"
                             alt="">
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linefourthree)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div id="linefourfour">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11097158/2021/2/17/8a4dbf96-9fa1-4ac2-9841-ef7c53e141e31613525189923HIGHLANDERMenGreySneakers1.jpg"
                             alt="">
-                        <div>
+                        <div >
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p>872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linefourfour)">ADD TO CART</button>
                         </div>
                     </div>
-                    <div>
+                    <div  id="linefourfive">
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20153028/2022/9/24/04a91674-aef0-44e8-92d0-a6554ab61c211664010042023RedTapeMenWhiteMeshWalkingNon-MarkingShoes1.jpg"
                             alt="">
                         <div>
                             <p>Roadster</p>
                             <p>Men Sneakers</p>
                             <p> 872</p>
-                            <button>ADD TO CART</button>
+                            <button onclick="addCart(linefourfive)">ADD TO CART</button>
                         </div>
 
                     </div>
