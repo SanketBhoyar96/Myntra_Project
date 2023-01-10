@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            /* font-family: 'Courier New', Courier, monospace; */
+            background-color: #190808;
+        }
+        #flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid green; */
+            /* margin: auto;
+            width: 50%; */
+            margin-top: 110px;
+            
+        }
+        #Blockborder{
+            /* border: 1px solid black; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+            background-color: darkcyan;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #flex>#Blockborder>#Block{
+           /* border: 1px solid blue; */
+           width: 250px;
+        }
+     #flex>#Blockborder>#Block>h1{
+        text-align: center;
+        margin-left: 10px;
+    color: rgb(221 215 24);
+    font-weight: 1000;
+    letter-spacing: 2px;
+  
+     }
+     .btnflex>button{
+        margin: 10px;
+        /* display: flex;
+        justify-content: center; */
+        /* margin-bottom: 5px; */
+        border: none;
+        border-radius: 5px;
+     }
+     .btnflex>button>a{
+        margin: 10px;
+        /* margin-bottom: 5px; */
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+     }
+     .btnflex>button:hover{
+        /* border: 1px solid rgb(58, 52, 52); */
+       background-color: purple;
+       color: black;
+     }
+     #flex>#Blockborder>#Block>input{
+        /* border: 1px solid orangered; */
+        width: 80%;
+         margin: auto;
+         /* margin-left: 10px; */
+         padding: 10px;
+         margin: 10px;
+     }
+     #flex>#Blockborder>#Block>input:active{
+       background-color: rgb(168, 117, 117);
+       /* border-color: chartreuse; */
+     }
+     .btnflex>button{
+        margin: 10px;
+        margin: auto;
+        color: white;
+        background-color: rgb(50, 50, 151);
+        cursor: pointer;
+        padding: 8px;
+        width: 100px;
+     }
+     /* ------------------------------------------------------------- */
+     .btnflex{
+          display: flex;
+        justify-content: center;
+     }
+
+    </style>
+</head>
+<body>
+    <div id="flex">
+        <div id="Blockborder">
+        <div id="Block">
+            <h1>Login Page</h1>
+            <input type="email" id="email" placeholder="Enter You Email" required><br>
+            <input type="password" id="password" placeholder="Enter Your Password" required><br>
+            <div class="btnflex">
+                <button onclick="Login()">Login</button>
+                <button><a href="./Register_Page..html">Register</a></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="server.js"></script>  
+</body>
+</html>

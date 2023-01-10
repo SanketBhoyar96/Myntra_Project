@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ec447684a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+       * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+          /* ----------Navbar--------------  */
+          nav {
+            width: 100%;
+            height: 80px;
+            background: white;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            padding: 0px 19px;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+            box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+        }
+        header>nav>div:nth-child(1)>img {
+            width: 50px;
+            height: 55px;
+            margin-left: 30px;
+            /* margin-top: 10px */
+        }
+        nav>div:nth-child(2)>span{
+         margin: 15px;
+            
+        }
+        nav>div:nth-child(1){
+           /* width: 25%; */
+        margin-left: 15px;
+             
+        }
+        nav>div:nth-child(2){
+           width: 25%;
+           margin: auto;
+           cursor: pointer;
+             
+        }
+        nav>div:nth-child(3){
+           width: 15%;
+           margin-right: 50px;
+           /* margin: auto; */
+             
+        }
+        nav>div:nth-child(3)>span{
+           margin-top:-10px;
+             
+        }
+        nav>div:nth-child(2)>li{
+        list-style-type: none;
+        display: inline-block;
+        font-size: 15px;
+
+        }
+        nav>div:nth-child(2)>li:nth-child(1){
+            color: #20BD99;
+    border-bottom: 2px solid #20BD99;
+        }
+        nav>div:nth-child(2)>li:nth-child(3){
+            color: #696B79;
+        }
+        nav>div:nth-child(2)>li:nth-child(5){
+            color: #696B79;
+        }
+        nav>div:nth-child(2)>li:nth-child(2){
+            list-style: none;
+            border-top: 1px dashed #000000;
+              height: 4px;
+              width: 20%
+        }
+        nav>div:nth-child(2)>li:nth-child(4){
+            list-style: none;
+            border-top: 1px dashed #000000;
+              height: 4px;
+              width: 20%;
+        }
+
+       
+  
+        /* --------------------------/////Screen/////-------------------------------------- */
+
+        #screen>div {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            height: 500px;
+            /* border: 1px solid #eaeaec; */
+        }
+
+        #screen>div>div:nth-child(1) {
+            border: 1px solid #eaeaec;
+            width: 70%;
+            margin: auto;
+            height: 500px;
+        }
+
+        #screen>div>div:nth-child(2) {
+            border: 1px solid #eaeaec;
+            width: 29%;
+            margin: auto;
+            height: 500px;
+        }
+
+        #screen>div>div:nth-child(3) {
+            border: 1px solid blue;
+            width: 33%;
+            margin: auto;
+            height: 400px;
+        }
+
+        /* --------------------------------------------- */
+        .Boxcode {
+            display: flex;
+            border: 1px solid #eaeaec;
+            height: 40px;
+            padding: 10px;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            margin: 10px;
+        }
+
+        .Boxcode>span {
+            padding: 8px;
+            margin-right: 200px;
+            font-weight: 600;
+        }
+
+        .Boxcode>div>button {
+            padding: 6px;
+            border: 1px solid red;
+            color: red;
+            background-color: white;
+        }
+
+        .Boxoffer {
+            /* margin: 10px; */
+            margin: 0px;
+            margin: auto;
+            width: 93%;
+            border: 1px solid #eaeaec;
+        }
+
+        .Boxoffer>span {
+            font-size: 15px;
+        }
+
+        .BoxOrder {
+            margin: 0px;
+            margin: auto;
+            width: 93%;
+            border: 1px solid #eaeaec;
+        }
+
+        /* ----------------- */
+        .BoxCoupan {
+            margin: 15px;
+            border-bottom: 1px solid #eaeaec;
+        }
+
+        .BoxCoupan>div>button {
+            font-size: 14px;
+            margin-left: 10px;
+            color: red;
+            background-color: white;
+            border: 1px solid red;
+            /* padding: ; */
+        }
+
+        .BoxCoupan>h3 {
+            /* color: red; */
+            margin: 10px;
+            /* font-size: 15px; */
+        }
+        .BoxCoupan>div>h4 {
+            color: red;
+            margin: 10px;
+            /* font-size: 15px; */
+        }
+
+        .BoxCoupan>div>h4>span {
+           color: #2a2a2c;;
+            font-size: 13px;
+        }
+        /* -------  */
+        .Boxsupport{
+          border-bottom: 1px solid #eaeaec;
+          margin: 5px;
+        }
+        .Boxsupport>h3{
+           font-size: 10px;
+           color: #2a2a2c;
+        }
+        .Boxsupport>div>span{
+         border: 1px solid black;
+         border-radius: 10px;
+         padding: 5px;
+        margin-left: 13px;
+        }
+        .Boxsupport>h4{
+       color: red;
+    
+        }
+        /* -----------  */
+        .Boxtotal{
+            margin: 10px;
+        }
+        .Boxprice{
+                 border-bottom: 1px solid #eaeaec; 
+        }
+        .Boxtotal>button{
+               font-size: 14px;
+               width: 100%;    
+               height: 30px;
+               margin-top: 10px;
+               background-color: #ff3f6c;
+               color: white;
+               border: none;
+        }
+        .Boxtotal>button:hover{
+               background-color: #d3103d;
+        }
+      
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./myntraLOGO.png" alt="">
+            </div>
+            <div>
+                    <li>BAG</li>
+                    <li></li>
+                    <li>ADDRESS</li>
+                    <li></li>
+                    <li>PYAMENT</li>
+            </div>
+            <div>
+                <img width="30px" height="30px" src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
+                <span>100% SECURE</span>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------screenpart-----------------------------------------------------------------------      -->
+    <div id="screen">
+        <div>
+            <div>
+                <div>
+                    <div class="Boxcode">
+                        <span>Check delivery time & services</span>
+                        <div><button>ENTER PIN CODE</button></div>
+                    </div><br>
+                    <div class="Boxoffer">
+                        <h4>Available offer</h4>
+                        <span>Get up to Rs 500 Cashback on CRED Pay UPI on a min spend of Rs 1000. TCA</span>
+                        <h4>Show More </h4>
+
+                    </div><br>
+                    <div class="BoxOrder">
+                        <span><img width="40px" height="30px"
+                                src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp" alt="">
+                            <span>Yay! <span>No convenience fee on this order.</span></span></span>
+                    </div><br>
+                    <h1>Cart</h1>
+                    <div id="BoxCart">
+                        <div id="leftCart"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="BoxCoupan">
+                    <h3>Coupons</h3>
+                    <div>
+                        <img width="30px" height="20px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ou8fFnTIhlKw2oX08oAf4KQ0o70LR_RudeUxXn2DIJY42V6er_08TFK_pCHFzDutvoY&usqp=CAU"
+                            alt="">
+                        <span>Apply Coupans</span>
+                        <button>APPLY</button>
+                        <h4>Login<span>to get upto ₹200 OFF on first order</span></h4>
+                    </div>
+                </div>
+                <!-- ---  -->
+                <div class="Boxsupport">
+                    <h3>SUPPORT TRANSFORMTIVE SOCIAL WORK IN INDIA</h3><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Support Us</label><br>
+                      <div><br>
+                        <span>&#8377; 10</span>
+                        <span>&#8377; 50</span>
+                        <span>&#8377; 100</span>
+                        <span>other</span>
+                      </div><br>
+                      <h4>Know More</h4>
+                </div>
+                <!-- ---------  -->
+
+                <div class="Boxprice">
+                    <p>PRICE DETAILS(1 item)</p>
+                    <div>
+                        <span>TOTAL MRP</span>
+                        <span style="margin-left: 125px;">&#8377;0</span>
+                    </div>
+                    <div>
+                        <span>Discount on MRP</span>
+                        <span style="margin-left: 85px;">-&#8377;0</span>
+                    </div>
+                    <div>
+                        <span>Coupans Discount</span>
+                        <span style="color: red; margin-left: 20px;">Apply Coupans</span>
+                    </div>
+                    <div>
+                        <span>Convenience <span style="color: red;">Fee know more</span></span>
+                        <span style="margin-left: 5px; line-height: px;">&#8377; Free</span>
+                    </div>
+                </div>
+                <div class="Boxtotal">
+                    <span >Total Amount</span>
+                    <span id="rightCart" style="margin-left: 80px;">&#8377;</span><br>
+                    <button onclick="">PLACE ORDER</button><br>
+
+                    <!-- show price rightcart using  -->
+                      <!-- <div id="rightCart">
+                        <h1>Price</h1>
+                     </div> -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // import the data from local storage 
+        // map the data and push every product to the html 
+        window.onload=function(){
+            var isLoggedIn = JSON.parse(localStorage.getItem("isUserLoggedIn"));
+            console.log(isLoggedIn);
+
+            if(isLoggedIn == true){
+                alert('Welcome Home');
+                var allProducts = JSON.parse(localStorage.getItem("allProducts"));
+                // console.log(allProducts[0], "allProducts");
+                var leftCart = document.getElementById("leftCart");
+                var rightCart = document.getElementById("rightCart");
+
+
+                // ----------cart mde -Price show kry sathi dive ghtla --
+                // var rightDivPriceTotalTag = document.createElement("div");
+                var rightDivPriceTotalTag = document.createElement("span");
+                var totalPrice = 0;
+                for(var i=0;i<allProducts.length;i++){
+                    console.log(allProducts,"allProducts");
+                        
+                    // parentdiv
+                    var innerDiv =document.createElement("div");
+                    innerDiv.style.display="flex";
+
+                    var leftDiv =document.createElement("div");
+        //             // -------Image-----------
+                    var img =document.createElement("img");
+                    img.src=allProducts[i].pI;
+                    img.style.width="90px";
+                    img.style.height="90px"
+                    leftDiv.append(img);
+                    
+                    var rightDiv = document.createElement("div");
+                    rightDiv.style.marginLeft="20px";
+                     //  -----------ProductName----------------
+                     var name = document.createElement("h4");
+                     name.innerText=allProducts[i].pN;
+                     rightDiv.append(name); 
+        //              //  -------------Productprice--------------------
+                     var price = document.createElement("p");
+                     price.innerText=allProducts[i].pP;
+                        
+                     totalPrice = totalPrice + Number(allProducts[i].pP);
+
+                     rightDiv.append(price);
+
+                     innerDiv.append(leftDiv);
+                     innerDiv.append(rightDiv);
+
+                     leftCart.append(innerDiv);
+                    }
+                    rightDivPriceTotalTag.append(totalPrice);
+                    rightCart.append(rightDivPriceTotalTag);
+                    // console.log(totalPrice,"rightDivepriceTotalTag");
+            }else{
+                alert("Login First");
+                window.location.href="./Login_Page.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
