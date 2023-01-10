@@ -154,6 +154,11 @@
             color: red;
             background-color: white;
         }
+        .Boxcode>div>button:hover{
+            color: #bd0000;
+          background-color: rgb(241, 89, 124);
+               border-color: rgb(255, 63, 108);
+        }
 
         .Boxoffer {
             /* margin: 10px; */
@@ -187,6 +192,11 @@
             background-color: white;
             border: 1px solid red;
             /* padding: ; */
+        }
+        .BoxCoupan>div>button:hover{
+            color: #bd0000;
+          background-color: rgb(241, 89, 124);
+               border-color: rgb(255, 63, 108);
         }
 
         .BoxCoupan>h3 {
@@ -286,7 +296,7 @@
                                 src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp" alt="">
                             <span>Yay! <span>No convenience fee on this order.</span></span></span>
                     </div><br>
-                    <h1>Cart</h1>
+                    <h2 style="margin-left: 20px; color: #d3103d; border-bottom: 1px solid #eaeaec;">Cart Products</h2>
                     <div id="BoxCart">
                         <div id="leftCart"></div>
                         <div></div>
@@ -368,11 +378,14 @@
                 // console.log(allProducts[0], "allProducts");
                 var leftCart = document.getElementById("leftCart");
                 var rightCart = document.getElementById("rightCart");
+                // leftCart.style.border="1px solid black"
 
 
                 // ----------cart mde -Price show kry sathi dive ghtla --
                 // var rightDivPriceTotalTag = document.createElement("div");
                 var rightDivPriceTotalTag = document.createElement("span");
+                rightDivPriceTotalTag.style.backgroundColor="#d1fc0e";
+                rightDivPriceTotalTag.style.fontSize="20px"
                 var totalPrice = 0;
                 for(var i=0;i<allProducts.length;i++){
                     console.log(allProducts,"allProducts");
@@ -382,6 +395,10 @@
                     innerDiv.style.display="flex";
 
                     var leftDiv =document.createElement("div");
+                    innerDiv.style.border="1px solid #eaeaec"
+                    innerDiv.style.margin="20px";
+                    innerDiv.style.backgroundColor="#baba74"
+                    innerDiv.style.color="black";
         //             // -------Image-----------
                     var img =document.createElement("img");
                     img.src=allProducts[i].pI;
@@ -391,6 +408,8 @@
                     
                     var rightDiv = document.createElement("div");
                     rightDiv.style.marginLeft="20px";
+                    rightDiv.style.marginTop="30px";
+                   
                      //  -----------ProductName----------------
                      var name = document.createElement("h4");
                      name.innerText=allProducts[i].pN;
