@@ -378,6 +378,7 @@
                 // console.log(allProducts[0], "allProducts");
                 var leftCart = document.getElementById("leftCart");
                 var rightCart = document.getElementById("rightCart");
+                leftCart.style.height='100px';
                 // leftCart.style.border="1px solid black"
 
 
@@ -393,6 +394,7 @@
                     // parentdiv
                     var innerDiv =document.createElement("div");
                     innerDiv.style.display="flex";
+                    innerDiv.style.height="100px"
 
                     var leftDiv =document.createElement("div");
                     innerDiv.style.border="1px solid #eaeaec"
@@ -403,7 +405,7 @@
                     var img =document.createElement("img");
                     img.src=allProducts[i].pI;
                     img.style.width="90px";
-                    img.style.height="90px"
+                    img.style.height="100px"
                     leftDiv.append(img);
                     
                     var rightDiv = document.createElement("div");
